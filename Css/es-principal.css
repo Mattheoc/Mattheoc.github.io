@@ -1,0 +1,238 @@
+:root{
+    --fondo: #5cb5e9;
+    --fondoNAV: #4387ad;
+    --fondoHeader: #183ca7;
+    --anchoPag: 960px;
+}
+*{
+    margin: 0px;
+    padding: 0px;    
+}
+body{
+    background: var(--fondo);
+}
+header{
+    background: var(--fondoHeader);
+    width: 100%;
+    height: 110px;
+    padding-top: 20px;
+}
+.con-encabezado{
+    width: var(--anchoPag);
+    height: 110px; 
+    background: #0d0b90;  
+    margin: auto;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.con-encabezado img{
+    width: 110px;
+    height: 80px; 
+    margin-top: 10px;   
+}
+.enc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;   
+}
+.p-arriba, .p-abajo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;     
+}
+.p-arriba{
+    font-size: 30px;
+}
+.p-abajo{
+    font-size: 20px;
+    color: #eeff00;
+}
+/*
+.con-encabezado p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #fff;  
+}
+*/
+.con-nav{
+    background: var(--fondoNAV);
+    width: var(--anchoPag);
+    height: 30px;
+    margin: auto;
+    margin-top: 3px;
+    border-bottom: solid var(--fondoHeader) 3px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.barra{
+    border-right: solid #504242 1px;
+}
+.con-nav a{
+    text-decoration: none;
+    padding: 1px 20px 1px 20px;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 17px;
+    color: #fff;
+    line-height: 30px;
+}
+.con-nav a:hover{
+    transform: scale(1.01);
+    transition: all 0.5s ease;
+    background: #ffffff;
+    color: #1d48d4;
+}
+.Emilie{
+    width: var(--anchoPag);
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+.Emilie img{
+    width: 100%;
+    height: auto;
+}
+.contenido{
+    width: 960px;
+    height: 100%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.contenido img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.contenido p{
+    color: #442a7b;
+    font-size: 20px;
+}
+.caja:hover{
+    transform: scale(1.1);
+    transition: all 0.7 ease;
+}
+footer{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    background: var(--fondoHeader);
+    padding-top: 20px;
+}
+footer p{
+    text-align: center;
+}
+.cont-footer{
+    width: var(--anchoPag);
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mapa{
+    width: 50%;
+    height: 300px;
+}
+.lateral  {
+    width: 50%;
+    margin-left: 20px;
+}
+.elemento{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.elemento:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+.t-lateral{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+.p-lateral{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+@media(max-width: 720px){
+    header{
+        padding-top: 0px;
+        height: 100%;
+    }
+    .con-encabezado{
+        width: 100%;
+        height: 100%;  
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; 
+    }
+    .con-encabezado img{
+        width: 140px;
+        height: 110px; 
+        margin-top: 10px;   
+    }
+    .con-encabezado p{
+        font-size: 20px;
+        text-align: center; 
+    }
+    .con-nav{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .barra{
+        width: 100%;
+        height: 50px;
+        border-bottom: solid #0d0b90 2px;
+    }
+    .Emilie {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; 
+    }
+    .Emilie img{
+        width: 100%;
+        height: auto;
+    }
+    .contenido, .cont-footer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; 
+    }
+    .caja{
+        margin-bottom: 30px;
+    }
+    .mapa{
+        width: 90%;
+        height: 350px;
+    }
+    .lateral{
+        width: 90%;
+    }
+}
